@@ -75,7 +75,7 @@ nav ul li a:hover{
 .col a{
 	text-decoration: none;
 	width: 200px;
-	color: #111;
+	color: #222;
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -85,7 +85,7 @@ nav ul li a:hover{
 	border-radius: 20px;
 	margin-top: 100px;
 	padding: 10px 30px;
-	border:2px solid #111;
+	border:2px solid #222;
 	font-family: 'Oswald', sans-serif;/**/
 	transition: all ease .5s;
 }
