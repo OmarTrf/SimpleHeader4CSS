@@ -1,54 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+	--main-font : "Permanent Marker", serif;
+	--second-font : "Poppins", serif;
+	--transition : all .3s ease-in-out;
+}
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: var(--main-font);
 }
-.container{
-	width: 100%;
-	height: 100vh;
-	margin-bottom: 10px;
-	/*background-image:url(../img/sea.jpg);*/
-	background-image: url("../img/sea2.jpg");
-	background-size: cover;
-	background-position: left;
-	padding: 0 8%;
-}
-.navbar{
-	height: 12%;
-	display: flex;
-	align-items: center;
-}
-.logo{
-	width: 60px;
-	cursor: pointer;
-	margin-left: 40px;
-}
-nav{
-	flex:1;
-	text-align: right;
-}
-nav ul li{
-	list-style: none;
-	display: inline-block;
-	margin-left: 60px;
-}
-nav ul li a{
-	text-decoration: none;
-	color: #fff;
-	font-size: 18px;
-	letter-spacing: 1px;
-	font-family: 'Oswald', sans-serif;/**/
-	transition: all ease .5s;
-}
-nav ul li a:hover{
-	color: #ffb703;
-	text-decoration: underline;
-}
-.menu{
-    cursor: pointer;
-    margin-left: 50px;
-    color: #fff;
-}
+a{text-decoration: none;}
 .row{
 	display: flex;
 	height: 88%;
@@ -57,91 +21,163 @@ nav ul li a:hover{
 .col{
 	flex-basis: 50%;
 }
-.col h1{
-	color: #ddd;
-	font-size: 100px;
-	font-family: 'Oswald', sans-serif;/**/
+.container {
+	margin: 0 auto;
+	padding: 0 15px;
+	/* overflow: hidden; */
 }
-.col:nth-child(1) p{
-	margin-top: 40px;
-	color: #ddd;
-	font-size: 17px;
-	text-align: justify;
-	line-height: 20px;
-	letter-spacing: 1.5px;
-	margin-bottom: 50px;
-	font-family: 'Oswald', sans-serif;/**/
+@media (min-width: 768px) {
+.container {
+	width: 750px;
 }
-.col a{
+}
+@media (min-width: 992px) {
+.container {
+	width: 970px;
+}
+}
+@media (min-width: 1200px) {
+.container {
+	width: 1170px;
+}
+}
+.btn{
+	display: block;
+	width: fit-content;
+	padding: 15px 30px;
+	background: #ffb703;
+	color: #000;
+	border: 2px solid transparent;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: var(--transition);
+}
+.btn:hover{
+	background-color: transparent;
+	color: #ffb703;
+	border: 2px solid #ffb703;
+	text-decoration: underline;
+}
+  /* END GLOBALS STYLE */
+/* NavBar */
+.header{
+	width: 100%;
+	height: 100vh;
+	margin-bottom: 10px;
+	/*background-image:url(../img/sea.jpg);*/
+	background-image: url("../img/sea2.jpg");
+	background-size: cover;
+	background-position: left;
+	display: flex;
+}
+.header .navbar{
+	height: 12%;
+	display: flex;
+	align-items: center;
+}
+.header .navbar .logo{
+	width: 60px;
+	cursor: pointer;
+}
+.header .navbar nav{
+	flex:1;
+	text-align: right;
+}
+.header .navbar nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 60px;
+}
+.header .navbar nav ul li a{
 	text-decoration: none;
-	width: 200px;
-	color: #222;
-	font-weight: bold;
-	text-transform: uppercase;
+	color: #fff;
+	font-size: 18px;
 	letter-spacing: 1px;
-	background: #fff;
-	border: 0;
-	outline: none;
-	border-radius: 20px;
-	margin-top: 100px;
-	padding: 10px 30px;
-	border:2px solid #222;
-	font-family: 'Oswald', sans-serif;/**/
 	transition: all ease .5s;
 }
-.col a:hover{
-	color: #fff;
-	background: #ffb703;
-	text-decoration: underline;
-}
-.card{
-	width: 210px;
-	height: 240px;
-	display: inline-block;
-	padding: 40px 25px;
-	margin: 10px 15px;
-	cursor: pointer;
-	box-sizing: border-box;
-	background-position:center;
-	background-size: cover;
-	border-radius: 10px;
-	box-shadow: 0 9px 7px -5px #111;
-	border:2px solid #ddd;
-	text-align: center;
-	transition: transform .7s;
-}
-.card:hover{
-	transform: scale(1.1);
-}
-.card1{
-	background-image: url(../img/fishing4.jpg);
-}
-.card2{
-	background-image: url(../img/swiming3.jpg);
-}
-.card3{
-	background-image: url(../img/surfing2.jpg);
-}
-.card4{
-	background-image: url(../img/food3.jpg);
-}
-.card h5{
+.header .navbar nav ul li a:hover{
 	color: #ffb703;
-	font-size: 2em;
-	font-weight: bold;
 	text-decoration: underline;
-	font-family: 'Oswald', sans-serif;/**/
 }
-.card p{
+.header .navbar .hamburger{
+    cursor: pointer;
+    margin-left: 50px;
+    color: #fff;
+	transition: var(--transition);
+}
+.navbar .hamburger:hover{color: #ffb703;}
+/* Hero */
+.header .hero{
+    height: calc(100% - 200px);
+    transition: var(--transition);
+}
+.header .hero .row{gap: 45px;}
+.header .hero .row .col{}
+.header .hero .col h1{
+	font-size: 55px;
+	margin: 0;
+	font-weight: 700;
 	color: #fff;
-	font-size: 17px;
-	letter-spacing: 1px;
 }
+.header .hero .col > p{
+	margin: 40px 0 25px;
+	font-weight: 400;
+	color: rgb(37, 37, 37);
+	font-family: var(--second-font);
+}
+.header .hero .row .col.cards{
+	display: grid;
+	grid-template-columns: repeat(auto-fill,minmax(170px,1fr));
+	gap: 20px;
+	flex-basis: 60%;
+}
+.header .hero .row .col.cards .card{
+	background-color: #ffb703;
+	position: relative;
+	height: 190px;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	overflow: hidden;
+	cursor: pointer;
+	transition: var(--transition);
+	
+}
+.header .hero .row .col.cards .card:hover{transform: scale(1.1) translateY(-5px);}
+.header .hero .row .col.cards .card .image{
+	position: absolute;
+	top: 0;left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+.header .hero .row .col.cards .card .image::after{
+	content: '';
+	position: absolute;
+	left: 0;top: 0;
+	width: 100%;height: 100%;
+	background-color: rgb(37, 37, 37,.4);
+}
+.header .hero .row .col.cards .card .image img{width: 100%;height: 100%;}
+.header .hero .row .col.cards .card .title{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 2;
+	font-size: 27px;
+	color: #ffb703;
+	transition: var(--transition);
+}
+
 .menuC{
 	position: absolute;
 	top: 0;
-	left: -1200px;
-	width:80%;
+	left: -100%;
+	width:65%;
 	height: 100vh;
 	background: #00008B;
 	display: flex;
@@ -153,9 +189,12 @@ nav ul li a:hover{
 	position: absolute;
 	right: 30px;
 	top: 20px;
+	font-size: 25px;
 	color: #fff;
 	cursor: pointer;
+	transition: var(--transition);
 }
+.menuC i:hover{color: #ffb703;}
 .menuC li{
 	list-style: none;
 	margin: 25px auto;

@@ -1,79 +1,80 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Welcomme</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">
-    <!-- FontGoogle -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- FontAwesome -->
+	<link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">
 </head>
+
 <body>
-  <div class="container">
-  	<div class="navbar">
-  		<img src="img/logo.png" class="logo">
-  		<nav>
-  			<ul>
-  				<li><a href="#">Homme</a></li>
-  				<li><a href="#">About</a></li>
-  				<li><a href="#">Contact</a></li>
-  			</ul>
-  		</nav>
-  		<i class="fas fa-ellipsis-h menu fa-2x hamburger" ></i>
-  	</div>
-  	<div class="row">
-  		<div class="col">
-  			<h1>Sea</h1>
-  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  			tempor incididunt ut labore et dolore magna aliqua.</p>
-  			<a href="#">read more</a>
-  		</div>
-  		<div class="col">
-  			<div class="card card1">
-  				<h5>Fishing</h5>
-  				<p>This year the 7th and 8th grade.</p>
-  			</div>
-  			<div class="card card2">
-  				<h5>Swiming</h5>
-  				<p>This year the 7th and 8th It is</p>
-  			</div>
-  			<div class="card card3">
-  				<h5>Surfing</h5>
-  				<p>st née d'une passion, d'une vision commune et d'un engagement .</p>
-  			</div>
-  			<div class="card card4">
-  				<h5>Eating</h5>
-  				<p>Vous êtes au bon endroit. En plein centre ville de casablanca.</p>
-  			</div>
-  		</div>
-  	</div>
-  </div>
-  <!-- menu -->
-  <div class="menuC">
-  	<i class="fas fa-times close"></i>
-  	<ul>
-  		<li><a href="#">Homme</a></li>
-  		<li><a href="#">Product</a></li>
-  		<li><a href="#">Transport</a></li>
-  		<li><a href="#">Blog</a></li>
-  		<li><a href="#">Histoire</a></li>
-  		<li><a href="#">Image</a></li>
-  	</ul>
-  </div>
-  <script type="text/javascript">
-  	btn1 = document.querySelector(".hamburger");
-  	menu = document.querySelector(".menuC");
-  	btn1.addEventListener('click', () => menu.style.left = 0);
-    
-    btn2 = document.querySelector(".close");
-  	menu = document.querySelector(".menuC");
-  	btn2.addEventListener('click', () => menu.style.left = '-1200px');
-  </script>
+	<div class="header">
+		:<div class="container">
+			<!-- Header Nav -->
+			<div class="navbar">
+				<img src="img/logo.png" class="logo">
+				<nav>
+					<ul>
+						<li><a href="#">Homme</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+				<i class="fas fa-ellipsis-h menu fa-2x hamburger"></i>
+			</div>
+			<!-- Hero -->
+			<div class="hero">
+				<div class="row">
+					<div class="col">
+						<h1>Welcome To The <span>Sea Group</span></h1>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta illum quod facilis
+							perspiciatis praesentium. Eum quos, tenetur aperiam ipsum, sit eaque id repudiandae iste at
+							ab sequi nemo a vel?</p>
+						<a href="#" class="btn">get started</a>
+
+					</div>
+					<div class="col cards">
+						<div class="card card_1">
+							<div class="image">
+								<img src="./img/fishing3.jpg" alt="">
+							</div>
+							<h3 class="title">Fishing</h3>
+						</div>
+						<div class="card card_2">card_2</div>
+						<div class="card">card_3</div>
+						<div class="card">card_4</div>
+						<div class="card">card_5</div>
+						<div class="card">card_6</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- menu -->
+	<div class="menuC">
+		<i class="fas fa-times close"></i>
+		<ul>
+			<li><a href="#">Homme</a></li>
+			<li><a href="#">Product</a></li>
+			<li><a href="#">Transport</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">Histoire</a></li>
+			<li><a href="#">Image</a></li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		btn1 = document.querySelector(".hamburger");
+		menu = document.querySelector(".menuC");
+		btn1.addEventListener('click', () => menu.style.left = 0);
+
+		btn2 = document.querySelector(".close");
+		menu = document.querySelector(".menuC");
+		btn2.addEventListener('click', () => menu.style.left = '-100%');
+	</script>
 </body>
+
 </html>
